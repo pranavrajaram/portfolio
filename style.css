@@ -11,9 +11,7 @@ body {
 nav {
     display: flex;
     margin-bottom: 1em;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom: 1px solid oklch(80% 3% 200);
 }
 
 nav a {
@@ -25,9 +23,7 @@ nav a {
 }
 
 nav a.current {
-    border-bottom-width: 0.4em;
-    border-bottom-style: solid;
-    border-bottom-color: oklch(90% 2% 200);
+    border-bottom: 0.4em solid oklch(90% 2% 200);
     padding-bottom: 0.1em;
 }
 
@@ -40,9 +36,8 @@ html {
 }
 
 nav a:hover {
-  border-bottom-width: 0.4em;
-  border-bottom-style: solid;
-  border-bottom-color: var(--color-accent);
+  border-bottom: 0.4em solid var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
   padding-bottom: 0.1em;
 }
 
@@ -60,7 +55,6 @@ form {
 label {
   display: grid;
   grid-template-columns: subgrid;
-  grid-column: 1 / -1;
 }
 
 
@@ -68,4 +62,99 @@ button {
   grid-column: 1 / -1;
 }
 
+.projects {
 
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+article {
+
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  margin: 0;
+  gap: 0.5em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  line-height: 1.1; 
+  text-wrap: balance;
+
+}
+
+h1 {
+
+  font-size: 250%;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: white;
+  color: black;
+}
+
+header h1 {
+  margin-bottom: 0rem;
+}
+
+header p {
+  margin: 0.5rem 0;
+  margin-top: 1em;
+}
+
+header a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem;
+  margin: 1em auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  color: #4caf50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 0.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.resume-link {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.resume-link:hover {
+  background-color: #45a049;
+  text-decoration: none;
+}
