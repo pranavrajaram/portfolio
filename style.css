@@ -115,7 +115,7 @@ header a:hover {
   text-decoration: underline;
 }
 
-section {
+.resume section {
   padding: 2rem;
   margin: 1em auto;
   max-width: 800px;
@@ -124,24 +124,24 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-section h2 {
+.resume section h2 {
   color: #4caf50;
   margin-bottom: 1rem;
   border-bottom: 2px solid #4caf50;
   padding-bottom: 0.5rem;
 }
 
-section ul li {
+.resume section ul li {
   margin-bottom: 0.5rem;
   padding-left: 0.5rem;
 }
 
-section a {
+.resume section a {
     color: #4caf50;
     text-decoration: none;
 }
 
-section a:hover {
+.resume section a:hover {
     text-decoration: underline;
 }
 
