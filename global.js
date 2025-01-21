@@ -14,7 +14,7 @@ function $$(selector, context = document) {
 
 
 let pages = [
-    { url: '', title: 'Home' },
+    { url: 'index.html', title: 'Home' },
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'contact/index.html', title: 'Contact' },
     { url: 'resume/index.html', title: 'Resume' },
@@ -31,11 +31,8 @@ let pages = [
     let title = p.title;
   
     if (!ARE_WE_HOME && !url.startsWith('http')) {
-
-        url = '../portfolio/' + url;
-      } else if (ARE_WE_HOME && !url.startsWith('http')) {
-        url = './portfolio/' + url; 
-      }
+      url = '../' + url;
+    }
   
     let a = document.createElement('a');
     a.href = url;
