@@ -28,7 +28,7 @@ nav a.current {
 }
 
 :root {
-  --color-accent: oklch(85% 20% 240);
+  --color-accent: oklch(65% 50% 0);
   --border-color: oklch(50% 10% 200 / 40%);
   color-scheme: light dark;
 }
@@ -43,7 +43,7 @@ nav a:hover {
   padding-bottom: 0.1em;
 }
 
-input, textarea, button {
+input, textarea, button, select {
   font: inherit;
 }
 
@@ -152,15 +152,11 @@ header a:hover {
 }
 
 .color-scheme {
-  position: absolute; /* Position switcher at top right */
-  top: 1rem; /* Offset from top */
-  right: 1rem; /* Offset from right */
-  font-size: 80%; /* Make it less prominent */
-  font-family: inherit; /* Match font with the rest of the site */
-}
-
-.color-scheme select {
-  font: inherit; /* Ensure font consistency */
+  position: absolute;
+  top: 1rem; 
+  right: 1rem; 
+  font-size: 80%; 
+  font-family: inherit; 
 }
 
 /* .projects img {

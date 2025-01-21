@@ -35,7 +35,6 @@ let pages = [
         url = '../' + url;
       }
   
-    // Create link and add it to the <nav>
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
@@ -84,7 +83,7 @@ select.addEventListener('input', function (event) {
     setColorScheme(event.target.value);
     localStorage.colorScheme = event.target.value;
     console.log('color scheme changed to', event.target.value);
-    
+
   });
 
 
