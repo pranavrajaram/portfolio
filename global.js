@@ -32,7 +32,9 @@ let pages = [
   
     if (!ARE_WE_HOME && !url.startsWith('http')) {
 
-        url = '../' + url;
+        url = '../portfolio/' + url;
+      } else if (ARE_WE_HOME && !url.startsWith('http')) {
+        url = './portfolio/' + url; 
       }
   
     let a = document.createElement('a');
