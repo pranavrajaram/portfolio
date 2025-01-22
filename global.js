@@ -14,10 +14,10 @@ function $$(selector, context = document) {
 
 
 let pages = [
-    { url: 'index.html', title: 'Home' },
-    { url: 'projects/index.html', title: 'Projects' },
-    { url: 'contact/index.html', title: 'Contact' },
-    { url: 'resume/index.html', title: 'Resume' },
+    { url: 'portfolio/index.html', title: 'Home' },
+    { url: 'portfolio/projects/index.html', title: 'Projects' },
+    { url: 'portfolio/contact/index.html', title: 'Contact' },
+    { url: 'portfolio/resume/index.html', title: 'Resume' },
     { url: 'https://github.com/pranavrajaram', title: 'GitHub' },
   ];
   
