@@ -14,15 +14,23 @@ function $$(selector, context = document) {
 
 
 let pages = [
-    { url: 'portfolio/index.html', title: 'Home' },
-    { url: 'portfolio/projects/index.html', title: 'Projects' },
-    { url: 'portfolio/contact/index.html', title: 'Contact' },
-    { url: 'portfolio/resume/index.html', title: 'Resume' },
+    { url: 'index.html', title: 'Home' },
+    { url: 'projects/index.html', title: 'Projects' },
+    { url: 'contact/index.html', title: 'Contact' },
+    { url: 'resume/index.html', title: 'Resume' },
     { url: 'https://github.com/pranavrajaram', title: 'GitHub' },
   ];
   
   let nav = document.createElement('nav');
   document.body.prepend(nav);
+
+  let BASE_URL;
+
+  if (location.pathname.includes('/portfolio/')) {
+      BASE_URL = '/portfolio/';
+  } else {
+      BASE_URL = '/';
+  }
   
   const ARE_WE_HOME = document.documentElement.classList.contains('home');
   
@@ -31,8 +39,8 @@ let pages = [
     let title = p.title;
   
     if (!ARE_WE_HOME && !url.startsWith('http')) {
-      url = '../' + url;
-    }
+      url = BASE_URL + url;
+  }
   
     let a = document.createElement('a');
     a.href = url;
