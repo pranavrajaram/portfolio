@@ -1,6 +1,15 @@
 import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
-const projects = await fetchJSON('../lib/projects.json');
+
+let fetch_url;
+
+if (location.pathname.includes('/portfolio/')) {
+    fetch_url = '/portfolio/lib/projects.json';
+} else {
+    fetch_url = '../lib/projects.json';
+}
+
+const projects = await fetchJSON(fetch_url);
 const latestProjects = projects.slice(0, 3);
 
 const projectsContainer = document.querySelector('.projects');
