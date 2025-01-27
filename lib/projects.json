@@ -1,0 +1,82 @@
+[
+    {
+        "title": "NFL Big Data Bowl 2024",
+        "year": "2024",
+        "link": "https://www.kaggle.com/code/pranavrajaram/wrap-up-a-look-at-nfl-tackle-probabilities",
+        "image": "../images/nflbdb.png",
+        "description": "I used an eXtreme Gradient Boosted Classifier to model NFL tackling data. I created a Tackle Rate Over Expected metric as well as a live play animation that highlights the most likely tacklers."
+    },
+    {
+        "title": "Power Outage Analysis",
+        "link": "https://pranavrajaram.github.io/lights-out/",
+        "year": "2025",
+        "image": "../images/lightbulb.png",
+        "description": "I built a Random Forest Regression model with sklearn to analyze a dataset of power outages, using techniques like one hot encoding, hyperparameter tuning, and cross-validation to optimize model predictions."
+    },
+    {
+        "title": "Open Source Work",
+        "link": "https://nflreadr.nflverse.com/authors.html",
+        "year": "2023",
+        "image": "../images/nflreadr.svg",
+        "description": "I contributed to the documentation and testing of the popular nflreadr package, used by over 100,000 people to analyze NFL data in R."
+    },
+    {
+        "title": "Wharton Moneyball Academy",
+        "link": "https://docs.google.com/presentation/d/1oI8x6sglXHabFycwZfue1hlzLtTtpDaRu9d9-QUr9xc/edit#slide=id.p",
+        "year": "2022",
+        "image": "../images/wharton.png",
+        "description": "I won the Best Final Project award at the Wharton Moneyball Academy, taught by Dr. Abraham J. Wyner. I used a k-means clustering algorithm to analyze NFL quarterbacks."
+    },
+    {
+        "title": "DSC 106 Project 1 Visualization",
+        "link": "https://pranavrajaram.github.io/dsc106_project1/",
+        "year": "2025",
+        "image": "../images/final_final.png",
+        "description": "Created a table using the {gt} package in R to visualize and analyze weather trends in the United States"
+    },
+    {
+        "title": "Shiny Apps.",
+        "link": "https://pranavrajaram.github.io/Shiny/",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Some web applications I have made using the R Shiny package."
+    },
+    {
+        "title": "Substack",
+        "link": "https://pranavrajaram.substack.com/",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A link to my substack with articles that use Data Science and Machine Learning to analyze sports."
+    },
+    {
+        "title": "Yahoo Sports",
+        "link": "https://sports.yahoo.com/author/pranav-rajaram/",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "My Yahoo Sports author profile."
+    },
+    {
+        "title": "Unde velit vitae iste.",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Provident tenetur placeat deleniti necessitatibus nihil rem velit. Deserunt, ad ipsam consequatur itaque temporibus est molestiae consequuntur nesciunt accusantium iste, placeat inventore quia cumque aspernatur. Consectetur ducimus enim dolores consequuntur?"
+    },
+    {
+        "title": "Numquam dolores quasi eveniet?",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nihil corrupti rem, dolorem doloribus voluptas sunt laboriosam itaque non dolores quod culpa. Sapiente ratione cumque voluptatibus repellat fugiat distinctio minus ea praesentium amet odio, unde sed, totam quam fuga!"
+    },
+    {
+        "title": "Harum labore temporibus optio?",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Recusandae temporibus veniam ipsam amet iure quidem mollitia adipisci? Quibusdam ut illum necessitatibus nam voluptate facilis porro nostrum voluptatem fugit? Eius laudantium iure consequuntur beatae vero quidem itaque voluptatibus tempore?"
+    },
+    {
+        "title": "Consectetur laboriosam fuga asperiores?",
+        "year": "2020",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Illo ipsa veritatis ad deserunt! Libero eius minima laboriosam placeat consequuntur, vero commodi quas, sit labore consectetur impedit incidunt, ea tempore dolor. Voluptates reiciendis rem impedit nostrum. Magnam, temporibus ipsum?"
+    }
+]
