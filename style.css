@@ -200,3 +200,52 @@ width: 100%;
   margin: 0;
   grid-row: 2;
 }
+
+#projects-plot {
+  max-width: 20em;
+  margin-block: 1em;
+
+  overflow: visible;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--color);
+}
+
+.legend li em {
+  font-style: italic;
+  color: gray;
+}
+
+.legend li {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  align-items: center; 
+  gap: 30px; 
+}
