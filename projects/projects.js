@@ -61,19 +61,14 @@ function renderPieChart(projectsGiven) {
 
                 if (selectedIndex === -1) {
 
-                    let filtered = query 
-                        ? projects.filter(project => {
-                            let values = Object.values(project).join('\n').toLowerCase();
-                            return values.includes(query.toLowerCase());
-                          })
-                        : projects;
-                    renderProjects(filtered, projectsContainer, 'h2');
-                } else {
-
+                    renderProjects(projects, projectsContainer, 'h2');
+                } 
+                else {
                     let selectedYear = data[selectedIndex].label;
-                    let yearFiltered = projectsGiven.filter(project => project.year === selectedYear);
-                    renderProjects(yearFiltered, projectsContainer, 'h2');
+                    let filteredProjects = projects.filter(p => p.year === selectedYear);
+                    renderProjects(filteredProjects, projectsContainer, 'h2');
                 }
+                      
             });
     });
 
