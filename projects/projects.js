@@ -46,6 +46,7 @@ function renderPieChart(projectsGiven) {
             .attr('d', arc)
             .attr('fill', colors(i))
             .attr('class', i === selectedIndex ? 'selected' : '')
+            
             .on('click', () => {
 
                 selectedIndex = selectedIndex === i ? -1 : i;
